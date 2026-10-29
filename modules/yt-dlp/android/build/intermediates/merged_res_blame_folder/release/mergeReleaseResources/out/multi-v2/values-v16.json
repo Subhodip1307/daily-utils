@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "expo.modules.ytdlp.yt-dlp-release-17:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/50bc293f76ea18cd46a53d4723f93394/transformed/appcompat-1.4.2/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/4b9c7a8fa612af84f564670f5186d8b5/transformed/core-1.8.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "expo.modules.ytdlp.yt-dlp-mergeReleaseResources-15:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/50bc293f76ea18cd46a53d4723f93394/transformed/appcompat-1.4.2/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/4b9c7a8fa612af84f564670f5186d8b5/transformed/core-1.8.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

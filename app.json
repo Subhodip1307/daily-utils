@@ -1,7 +1,6 @@
 {
   "expo": {
     "name": "daily-utils",
-    "slug": "daily-utils",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,7 +16,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "in.divergentcs.detailsutils"
     },
     "web": {
       "output": "server",
@@ -28,11 +28,21 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#4F46E5",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "useLegacyPackaging": true,
+            "extraProguardRules": "-keep class com.yausername.** { *; }\n-keep class com.fasterxml.jackson.** { *; }\n-dontwarn com.fasterxml.jackson.**\n-keep class org.apache.commons.compress.** { *; }\n-dontwarn org.apache.commons.compress.**\n-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod"
+          }
+        }
+      ],
+      "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true,

@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["YtDlpModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.ytdlp.YtDlpModule"]
+  }
+}

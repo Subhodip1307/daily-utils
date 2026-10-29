@@ -1,0 +1,52 @@
+{
+    "logs": [
+        {
+            "outputFile": "expo.modules.ytdlp.yt-dlp-mergeReleaseResources-15:/values-v28/values-v28.xml",
+            "map": [
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/50bc293f76ea18cd46a53d4723f93394/transformed/appcompat-1.4.2/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,447",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,442,684"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,397",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,392,584"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "expo.modules.ytdlp.yt-dlp-release-17:/values-v28/values-v28.xml",
+            "map": [
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/50bc293f76ea18cd46a53d4723f93394/transformed/appcompat-1.4.2/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,447",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,442,684"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,397",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,392,584"
+                    }
+                }
+            ]
+        }
+    ]
+}

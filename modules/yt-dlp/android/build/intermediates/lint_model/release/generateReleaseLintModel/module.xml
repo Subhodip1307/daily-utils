@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android"
+    name=":yt-dlp"
+    type="LIBRARY"
+    maven="expo.modules.ytdlp:yt-dlp:0.1.0"
+    agpVersion="9.2.1"
+    buildFolder="build"
+    bootClassPath="/home/grim/Android/Sdk/platforms/android-37.0/android.jar:/home/grim/Android/Sdk/build-tools/36.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-37.0"
+    neverShrinking="true"
+    highlightGradualR8Api="false">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

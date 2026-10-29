@@ -1,0 +1,9 @@
+expo.modules.ytdlp.yt-dlp-pngs-0 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/build/generated/res/pngs/release
+expo.modules.ytdlp.yt-dlp-updated_navigation_xml-1 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/build/generated/updated_navigation_xml/release
+expo.modules.ytdlp.yt-dlp-mergeReleaseResources-2 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+expo.modules.ytdlp.yt-dlp-mergeReleaseResources-3 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+expo.modules.ytdlp.yt-dlp-release-4 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/build/intermediates/merged_res/release/mergeReleaseResources
+expo.modules.ytdlp.yt-dlp-release-5 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/build/intermediates/packaged_res/release/packageReleaseResources
+expo.modules.ytdlp.yt-dlp-main-6 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/src/main/res
+expo.modules.ytdlp.yt-dlp-release-7 /home/grim/Desktop/projects/daily-utils/modules/yt-dlp/android/src/release/res
+gradleHome-0 /home/grim/.gradle

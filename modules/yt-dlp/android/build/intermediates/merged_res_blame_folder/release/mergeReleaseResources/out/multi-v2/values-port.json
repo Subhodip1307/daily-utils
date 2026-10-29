@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "expo.modules.ytdlp.yt-dlp-mergeReleaseResources-15:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/50bc293f76ea18cd46a53d4723f93394/transformed/appcompat-1.4.2/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "expo.modules.ytdlp.yt-dlp-release-17:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/grim/.gradle/caches/9.4.1/transforms/50bc293f76ea18cd46a53d4723f93394/transformed/appcompat-1.4.2/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
