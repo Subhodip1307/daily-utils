@@ -1,0 +1,7 @@
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=$HOME/android-studio/jbr  
+source ~/.zshrc
+echo $JAVA_HOME
+java -version
