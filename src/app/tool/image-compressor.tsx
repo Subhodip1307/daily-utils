@@ -2,12 +2,13 @@ import { Ionicons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import { useRef, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ChipGroup } from '../../components/ChipGroup';
 import { useFeedback } from '../../components/Feedback';
 import { FileNameInput } from '../../components/FileNameInput';
 import { IconButton } from '../../components/IconButton';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { ToolHeader } from '../../components/ToolHeader';
 import { colors, radius, shadow } from '../../constants/theme';
@@ -20,7 +21,6 @@ import {
 } from '../../services/imageCompressor';
 import { formatBytes, stripExtension } from '../../utils/format';
 import { saveToGallery } from '../../utils/media';
-
 const ACCENT = '#7C3AED';
 const MAX_IMAGES = 30;
 
@@ -187,7 +187,7 @@ export default function ImageCompressorScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ToolHeader title="Image Compressor" />
 
-      <ScrollView
+      <KeyboardScroll
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
@@ -427,7 +427,7 @@ export default function ImageCompressorScreen() {
             )}
           </>
         )}
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* ---------- Footer ---------- */}
       {count > 0 && (

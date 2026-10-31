@@ -1,9 +1,10 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as Clipboard from 'expo-clipboard';
 import { useRef, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFeedback } from '../../components/Feedback';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { ToolHeader } from '../../components/ToolHeader';
 import { colors, radius, shadow } from '../../constants/theme';
@@ -122,7 +123,7 @@ export default function VideoDownloaderScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ToolHeader title="Video Downloader" />
 
-      <ScrollView
+      <KeyboardScroll
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
@@ -279,7 +280,7 @@ export default function VideoDownloaderScreen() {
             </View>
           </>
         )}
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* Bottom bar */}
       {info && selected && (

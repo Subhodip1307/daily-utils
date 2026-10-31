@@ -2,12 +2,13 @@ import { Ionicons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import { useRef, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ChipGroup } from '../../components/ChipGroup';
 import { useFeedback } from '../../components/Feedback';
 import { FileNameInput } from '../../components/FileNameInput';
 import { IconButton } from '../../components/IconButton';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { ToolHeader } from '../../components/ToolHeader';
 import { colors, radius, shadow } from '../../constants/theme';
@@ -176,7 +177,7 @@ export default function ImagesToPdfScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ToolHeader title="Images to PDF" />
 
-      <ScrollView
+      <KeyboardScroll
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
@@ -343,7 +344,7 @@ export default function ImagesToPdfScreen() {
             )}
           </>
         )}
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* ---------- Footer ---------- */}
       {count > 0 && (

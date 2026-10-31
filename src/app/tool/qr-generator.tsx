@@ -2,18 +2,19 @@
 import * as Sharing from 'expo-sharing';
 import { useRef, useState } from 'react';
 import {
-    Pressable,
-    ScrollView,
-    StyleSheet,
-    Switch,
-    Text,
-    TextInput,
-    TextInputProps,
-    View
+  Pressable,
+
+  StyleSheet,
+  Switch,
+  Text,
+  TextInput,
+  TextInputProps,
+  View
 } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFeedback } from '../../components/Feedback';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { ToolHeader } from '../../components/ToolHeader';
 import { colors, radius, shadow } from '../../constants/theme';
@@ -109,7 +110,7 @@ export default function QrGeneratorScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ToolHeader title="QR Generator" />
 
-      <ScrollView
+      <KeyboardScroll
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
@@ -295,7 +296,7 @@ export default function QrGeneratorScreen() {
             );
           })}
         </View>
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* Actions */}
       <View style={styles.footer}>

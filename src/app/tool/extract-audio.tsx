@@ -2,10 +2,11 @@ import { Ionicons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import { useEffect, useRef, useState } from 'react';
-import { Animated, Easing, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Animated, Easing, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFeedback } from '../../components/Feedback';
 import { FileNameInput } from '../../components/FileNameInput';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { ToolHeader } from '../../components/ToolHeader';
 import { colors, radius, shadow } from '../../constants/theme';
@@ -163,7 +164,7 @@ export default function ExtractAudioScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ToolHeader title="Extract Audio" />
 
-      <ScrollView
+      <KeyboardScroll
   contentContainerStyle={styles.content}
   keyboardShouldPersistTaps="handled"
   showsVerticalScrollIndicator={false}
@@ -301,7 +302,7 @@ export default function ExtractAudioScreen() {
             </Pressable>
           </View>
         )}
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* Footer */}
       {video && (

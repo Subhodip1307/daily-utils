@@ -1,12 +1,12 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
+import { Pressable, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFeedback } from '../../components/Feedback';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { colors, radius, shadow } from '../../constants/theme';
 import { TOOLS, Tool } from '../../constants/tools';
-
 const INPUT_LABEL = {
   url: 'Video link',
   video: 'Video',
@@ -68,7 +68,7 @@ function ToolView({ tool }: { tool: Tool }) {
         <View style={{ width: 44 }} />
       </View>
 
-      <ScrollView
+      <KeyboardScroll
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
@@ -134,7 +134,7 @@ function ToolView({ tool }: { tool: Tool }) {
             </View>
           </>
         )}
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* Bottom action button */}
       <View style={styles.footer}>

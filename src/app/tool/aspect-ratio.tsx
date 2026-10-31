@@ -5,7 +5,6 @@ import { useState } from 'react';
 import {
   Image,
   Pressable,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -15,6 +14,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFeedback } from '../../components/Feedback';
 import { FileNameInput } from '../../components/FileNameInput';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { ToolHeader } from '../../components/ToolHeader';
 import { colors, radius, shadow } from '../../constants/theme';
@@ -180,7 +180,7 @@ export default function AspectRatioScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ToolHeader title="Aspect Ratio" />
 
-      <ScrollView
+      <KeyboardScroll
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
@@ -347,7 +347,7 @@ export default function AspectRatioScreen() {
             />
           </>
         )}
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* ---------- Footer ---------- */}
       {image && (

@@ -1,6 +1,7 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { KeyboardProvider } from 'react-native-keyboard-controller';
 import { FeedbackProvider } from '../components/Feedback';
 import { colors } from '../constants/theme';
 import { warmUpDownloader } from '../services/videoDownloader';
@@ -10,7 +11,8 @@ export default function RootLayout() {
     warmUpDownloader();
   }, []);
 
-  return (
+ return (
+  <KeyboardProvider>
     <FeedbackProvider>
       <StatusBar style="dark" />
       <Stack
@@ -21,5 +23,6 @@ export default function RootLayout() {
         }}
       />
     </FeedbackProvider>
-  );
+  </KeyboardProvider>
+);
 }

@@ -3,11 +3,12 @@ import { useAudioPlayer, useAudioPlayerStatus } from 'expo-audio';
 import * as DocumentPicker from 'expo-document-picker';
 import * as Sharing from 'expo-sharing';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { PanResponder, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { PanResponder, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ChipGroup } from '../../components/ChipGroup';
 import { useFeedback } from '../../components/Feedback';
 import { FileNameInput } from '../../components/FileNameInput';
+import { KeyboardScroll } from '../../components/KeyboardScroll';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { ToolHeader } from '../../components/ToolHeader';
 import { colors, radius, shadow } from '../../constants/theme';
@@ -296,7 +297,7 @@ export default function AudioCutterScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ToolHeader title="Audio Cutter" />
 
-      <ScrollView
+      <KeyboardScroll
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
@@ -573,7 +574,7 @@ export default function AudioCutterScreen() {
             />
           </>
         )}
-      </ScrollView>
+      </KeyboardScroll>
 
       {/* ---------- Footer ---------- */}
       {audio && (
