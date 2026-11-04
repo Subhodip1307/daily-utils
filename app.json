@@ -3,11 +3,11 @@
     "name": "daily-utils",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/my_logo.png",
     "scheme": "dailyutils",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/my_logo.png"
     },
     "android": {
       "adaptiveIcon": {
@@ -29,7 +29,7 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#4F46E5",
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/my_logo.png",
           "imageWidth": 76
         }
       ],
